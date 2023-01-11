@@ -3,6 +3,14 @@
 
 functions = {}
 
+function functions.garbageCollectorOptions(param)
+	if param == "s" then
+		collectgarbage("stop")
+	elseif param == "r" then
+		collectgarbage("restart")
+	else collectgarbage("collect") end
+end	
+
 function functions.footprint(param)
 	GC_count = collectgarbage("count")
 	print("kBytes", GC_count)

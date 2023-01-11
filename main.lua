@@ -14,7 +14,7 @@ local line_count = 0
 local variables = {}
 
 for line in io.lines("script.toy") do
-  collectgarbage("stop")
+  --collectgarbage("stop")
   line_count = line_count + 1
 
   -- printing text
@@ -69,6 +69,8 @@ for line in io.lines("script.toy") do
   		standard_functions.wait(tonumber(param))
   	elseif func == "workdir" then
   		standard_functions.printWorkingDirectory(tonumber(param))
+  	elseif func == "GC_config" then
+      standard_functions.garbageCollectorOptions(tostring(param))
   	end 
 
   end

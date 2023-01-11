@@ -6,11 +6,15 @@ variable declaration
 
 printing variables
 'name'
+'hello name'
 
-call standard functions like this
+standard functions are called like this
 
-stops the process for a given amount of seconds
+stops the process for 3 seconds before resuming to the next line
 !sleep!3
+
+prints current memory usage in kilobytes
+!footprint!1
 
 clears the screen use win_cls if your are on Windows OS
 !cls!1
@@ -41,12 +45,6 @@ le art
 '⠀⠀⠑⠄⣀⠙⡭⠢⢀⡀⠀⠁⠄⣀⣀⠀⢀⣀⣀⣀⡠⠂⢃⡀⠔⠱⡞⢁⠄⣁⠔⠁⠀'
 '⠀⠀⠀⠀⠀⢠⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠉⠁⠀⠀⠀⠀'
 '⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀'
-
-
-
-
-prints memory usage
-!footprint!1
 
 the process will end automatically as soon as the interpreter
 is on the last line, however you can exit the program on purpose
